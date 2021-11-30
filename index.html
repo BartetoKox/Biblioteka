@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Książka</title>
+	<link rel="stylesheet">
+
+	<script ></script>
+	<style type="text/css">
+		body{
+			background-color: #00f891e1;
+			text-align: left;
+			}
+		
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1>Książki w bibliotece</h1>
+
+		<div id="bookshelf">
+			<template class="book">
+				<p>Tytuł książki</p>
+				<p>Autor książki</p>
+			
+				<button>Usuń</button>
+			<hr>
+			</template>
+		</div>
+	</div>
+  
+
+	<br>
+	<h1>Dodaj książke</h1>
+ 	<div class="container" >
+ 		<div class="row">
+ 			<div class="col"></div>
+ 			<div class="col">
+ 				<form action="submit" onsubmit="return AddBook()" id="AddBook">
+					<input class="form-control"  type="text" name="title" placeholder="Podaj tyuł książki do dodania" required="">
+					<br>
+					<input class="form-control" type="text" name="author" placeholder="Autor książki do dodania" required="">
+					<br>
+		
+				
+					<button>Dodaj książke do biblioteki</button>
+				</form>
+ 			</div>
+ 			<div class="col"></div>
+ 		</div>
+		 
+		 
+		
+	</div>
+	
+  
+  <script src="main.js"></script>
+</body>
+
+</html>
